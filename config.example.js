@@ -21,7 +21,8 @@ module.exports = {
         password: 'jenkins',
         canModifyEntry: false,
       },
-    ]
+    ],
+    flushInterval: 3600
   },
   // Database for storing users' password
   database: {
