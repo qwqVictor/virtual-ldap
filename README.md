@@ -103,7 +103,11 @@ For Virtual-LDAP using the above configuration file, the commonly used DNs are a
 
 `mail=user@example.com,ou=People,o=Example,dc=example,dc=com`
 
+**Typical User DN (Feishu)**
 
+`samaccountname=user,ou=People,o=Example,dc=example,dc=com`
+
+Feishu provider parses enterprise email field, and if user has an enterprise email, the username of mail address will be used as `sAMAccountName`, otherwise the full mail address will be used.
 
 ## Run Virtual-LDAP
 
