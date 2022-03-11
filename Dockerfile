@@ -1,11 +1,9 @@
-FROM node:13.7.0-alpine
+FROM node:16.14.0-alpine
 
 WORKDIR /app
-COPY package.json /app/
-RUN npm install
-
-COPY lib /app/lib
-COPY index.js /app/
+COPY . /app
 COPY config.example.js /app/config.js
+
+RUN npm ci
 
 CMD [ "node","index.js" ]
