@@ -28,7 +28,6 @@
   },
   "dependencies": {
     "axios": "^0.26.1",
-    "cron": "^1.8.2",
     "ldapjs": "^1.0.2",
     "log": "^6.0.0",
     "log-node": "^8.0.3",
